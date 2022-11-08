@@ -16,10 +16,10 @@
 //Category: Technologies
 //Elements: 5
 
-const totalCategories = document.querySelectorAll(".item");
-console.log(`В наявності ${totalCategories.length} категорії.`);
+const allCategories = document.querySelectorAll(".item");
+console.log(`В наявності ${allCategories.length} категорії.`);
 
-const categoriesArray = [...totalCategories]
+const categoriesArray = [...allCategories]
   .map(
     categories => `Категорія: ${categories.children[0].textContent}
 Кількість елементів: ${categories.children[1].children.length}`
