@@ -24,7 +24,7 @@ const images = [
 const list = document.querySelector('.gallery')
 
 const pickup = images
-	.map(image => `<li><img class="picture" src=${image.url} width = '400' alt='${image.alt}'></img></li>`)
+	.map(image => `<li><img class="picture" src=${image.url} width = '400' height = '260' alt='${image.alt}'></img></li>`)
 	.join(';)')
 
   list.insertAdjacentHTML('beforeend', pickup)
@@ -36,6 +36,6 @@ list.style.display = 'flex'
 list.style.flexWrap = 'column'
 list.style.listStyle = 'none'
 list.style.gap = '10px'
-//list.style.justifyContent = 'center'
+
 
 
