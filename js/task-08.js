@@ -1,5 +1,5 @@
 // завдання 8
-//Напиши скрипт управления формой логина.
+
 
 const form = document.querySelector('.login-form')
 
